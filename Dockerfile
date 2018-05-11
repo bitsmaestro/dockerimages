@@ -11,9 +11,6 @@ RUN ["mkdir", "/opt/tomcat"]
 
 WORKDIR "/opt/tomcat"
 
-RUN ["wget", "http://www-us.apache.org/dist/tomcat/tomcat-${series}/v${series}.${version}/bin/apache-tomcat-${series}.${version}.tar.gz"]
-
-
 RUN ["wget", "http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz"]
 RUN ["tar", "-zxvf", "apache-tomcat-8.5.16.tar.gz",  "-C", "/opt/tomcat", "--strip-components=1"]
 
