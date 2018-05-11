@@ -1,2 +1,2 @@
 # dockerimages
-place to docker files for images 
+place to docker store files for images 
